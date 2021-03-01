@@ -156,7 +156,7 @@ resource "aws_instance" "Pub-Server" {
               sudo apt -y install apache2 -y
               sudo systemctl enable apache2
               sudo systemctl start apache2
-              echo "<h1>This is the correct page</h1>" > /var/www/html/index.html
+              echo "<h1>This is the modified production home page</h1>" > /var/www/html/index.html
     EOF
   tags = {
     Name = "Pub-Ubuntu-Server"
