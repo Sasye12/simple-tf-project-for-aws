@@ -143,8 +143,7 @@ resource "aws_instance" "Pub-Server" {
   ami           = "ami-03d315ad33b9d49c4"
   instance_type = "t2.micro"
   availability_zone = "us-east-1a"
-  key_name = "prod-key-pair"
- 
+   
   network_interface {
     device_index = 0
     network_interface_id = aws_network_interface.Project-NIC.id
@@ -156,7 +155,7 @@ resource "aws_instance" "Pub-Server" {
               sudo apt -y install apache2 -y
               sudo systemctl enable apache2
               sudo systemctl start apache2
-              echo "<h1>This is the modified production home page</h1>" > /var/www/html/index.html
+              echo "<h1>This is the asdafsadfsdfsaf</h1>" > /var/www/html/index.html
     EOF
   tags = {
     Name = "Pub-Ubuntu-Server"
